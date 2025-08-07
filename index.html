@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Frontend Mentor | Product preview card component</title>
+  <style>
+      .container {
+        display: flex;
+        max-width: 600px;
+        margin: 40px auto;
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+      .container img {
+        width: 50%;
+        object-fit: cover;
+      }
+      .content {
+        padding: 32px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      /* Botão menor e verde */
+      button {
+        background-color: hsl(158, 42%, 18%);
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        padding: 10px 0;
+        font-size: 14px;
+        font-weight: bold;
+        width: 100%;
+        margin-top: 18px;
+        cursor: pointer;
+        transition: background 0.2s;
+      }
+      button:hover {
+        background-color: hsl(158, 36%, 37%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="images/image-product-desktop.jpg" alt="fotoperfume" />
+      <div class="content">
+      <h2 class="subtitulo-verde">Perfume</h2>
+        <h1>Gabrielle Essence Eau De Parfum</h1>
+        <p>
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <p>
+          <strong class="preco-verde">$149.99</strong>
+          <span style="text-decoration: line-through; color: gray"
+            >$169.99</span
+          >
+        </p>
+        <button>Adicionar ao Carrinho</button>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">JTSOFF</a>.
+    </div>
+  </body>
+</html>

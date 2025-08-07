@@ -1,0 +1,81 @@
+.container {
+  display: flex;
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.container img {
+  width: 50%;
+  object-fit: cover;
+}
+
+.content {
+  padding: 32px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+button {
+  background-color: hsl(158, 42%, 18%);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 0;
+  font-size: 14px;
+  font-weight: bold;
+  width: 100%;
+  margin-top: 18px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background-color: hsl(158, 36%, 37%)
+}
+
+.preco-verde {
+  color: hsl(158, 36%, 37%);
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    max-width: 95vw;
+  }
+  .container img,
+  .content {
+    width: 100%;
+  }
+  .content {
+    padding: 20px;
+  }
+}
+.subtitulo {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: hsl(228, 12%, 48%);
+  margin-bottom: 12px;
+}
+.subtitulo-verde {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: hsl(158, 42%, 18%); /* mesma cor do botão */
+  margin-bottom: 12px;
+}
